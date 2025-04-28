@@ -90,7 +90,7 @@ function Hero() {
             </motion.span>
           </MotionButton>
         </div>
-        <Blob className="absolute top-56 left-10" />
+        {/* <Blob className="absolute top-56 left-10" /> */}
         <motion.div
           className="flex flex-col absolute bottom-12 justify-center items-center w-full gap-1"
         >
