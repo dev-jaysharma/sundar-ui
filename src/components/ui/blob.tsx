@@ -17,7 +17,7 @@ function Blob({className} :props) {
       transition={{
         repeat: Infinity,
         ease: "circOut",
-        duration: 3,
+        duration: 100,
         repeatType: "reverse",
       }}
       className={cn(
