@@ -1,0 +1,17 @@
+{
+    "$schema": "https://ui.shadcn.com/schema/registry.json",
+    "name": "Sundar-UI",
+    "homepage": "https://sundar-ui.vercel.app/",
+    "items": [
+        {
+            "name": "shuffle-text",
+            "type": "registry:ui",
+            "title": "Shuffle Text",
+            "description": "a great animation of shuffling text until it reaches the desired text",
+            "files": [{
+                "path": "./src/components/ui/ShuffleText.tsx",
+                "type": "registry:ui"
+            }]
+        }
+    ]
+}

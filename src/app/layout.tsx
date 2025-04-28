@@ -1,3 +1,4 @@
+
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
@@ -22,11 +23,58 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
   return (
-    <html lang="en">
+    <html lang="en" className="dark">
+      <head>
+        <title>Sundar UI — Beautiful, Modern React Components</title>
+        <meta charSet="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="robots" content="index, follow" />
+        <meta name="language" content="English" />
+        <meta name="author" content="jay sharma" />
+        <meta name="publisher" content="sundar ui" />
+        <meta
+          name="description"
+          content="Sundar UI offers beautiful, modern, and customizable React components to build stunning web apps effortlessly."
+        />
+        <meta
+          name="keywords"
+          content="React UI library, Modern React components, Beautiful UI components, Frontend development, Tailwind UI library, Open source UI kit, Sundar UI, Component library, UI kit for developers, Stunning React UI, Best UI library, Web design components, Tailwind CSS components, Design system, Frontend framework, UI components for React, Web development, Responsive UI, Elegant UI library, Creative UI kit"
+        />
+        <meta
+          property="og:title"
+          content="Sundar UI — Modern, Stunning React Components"
+        />
+        <meta
+          property="og:description"
+          content="Build modern, beautiful applications with Sundar UI's customizable React components."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://yourdomain.com" />
+        <meta
+          property="og:image"
+          content="https://yourdomain.com/og-image.png"
+        />
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:site_name" content="Sundar UI" />
+        <meta name="theme-color" content="#0f172a" />
+        <meta name="color-scheme" content="dark light" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="HandheldFriendly" content="True" />
+        <meta name="MobileOptimized" content="320" />
+        <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta
+          name="apple-mobile-web-app-status-bar-style"
+          content="black-translucent"
+        />
+        <link rel="canonical" href="https://yourdomain.com" />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        {/* <Navbar /> */}
         {children}
       </body>
     </html>
