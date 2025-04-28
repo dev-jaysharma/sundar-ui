@@ -29,26 +29,7 @@ function Hero() {
               <span> Mordern</span> <br />
             </div>
             <div className="relative w-full flex justify-center">
-              <motion.svg
-                className="absolute -mt-2" // Adjusted positioning
-                width="601"
-                height="16"
-                viewBox="0 0 601 16"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <motion.path
-                  initial={{ pathLength: 0 }}
-                  animate={{ pathLength: 1 }}
-                  transition={{
-                    duration: 3,
-                    ease: "easeInOut",
-                  }}
-                  d="M1 1.99998C22.3333 2.66664 66.4 4.59998 72 6.99998C79 9.99998 112 -3.00002 123 1.99998C134 6.99998 157 6.99998 175 6.99998C193 6.99998 219 -2.00002 229 6.99998C237 14.2 265 9.99997 278 6.99998C293 6.99998 325.2 6.99998 334 6.99998C345 6.99998 371 12 377 6.99998C383 1.99998 406 6.99998 412 6.99998C418 6.99998 433 -3.00002 447 1.99998C461 6.99998 471 19 494 13C517 6.99998 518 1.99998 532 1.99998C546 1.99998 551 19 565 13C579 6.99998 576 12 600 6.99998"
-                  stroke="#f5f5f4"
-                  strokeWidth={3}
-                />
-              </motion.svg>
+              
             </div>
             Beautiful Interfaces <br />
             Effortlessly
