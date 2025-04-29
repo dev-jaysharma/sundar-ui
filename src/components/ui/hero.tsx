@@ -19,7 +19,7 @@ function Hero() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{
-              delay: 0.5,
+              delay:0,
               duration: 0.5,
             }}
             className="text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-extrabold bg-gradient-to-br from-blue-400 via-blue-500 to-blue-600 bg-clip-text text-transparent mb-4 md:mb-6"
@@ -39,7 +39,7 @@ function Hero() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{
-              delay: 1,
+              delay:0,
               duration: 0.72,
             }}
             className={cn(
@@ -52,26 +52,38 @@ function Hero() {
           </motion.div>
         </div>
 
-        <div className="gap-3 md:gap-4 flex flex-col sm:flex-row mt-8 md:mt-12">
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1, delay: 0 }}
+          className="gap-3 md:gap-4 flex flex-col sm:flex-row mt-8 md:mt-12"
+        >
           <MotionButton
-            whileHover={{ scale: 1.05 }}
-            transition={{ duration: 0.3 }}
+            whileTap={{ scale: 0.7 }}
+            // whileHover={{ scale: 1.05 }}
+            transition={{ duration: 0.1 }}
             variant={"secondary"}
-            className="p-4 md:p-6 bg-gradient-to-br font-bold from-blue-500 via-blue-500 to-blue-600 text-sm sm:text-base"
+            className="z-10 p-4 md:p-6 bg-gradient-to-br font-bold from-blue-500 via-blue-500 to-blue-600 text-sm sm:text-base"
           >
             <motion.span>Browse Components</motion.span>
           </MotionButton>
           <MotionButton
-            whileHover={{ scale: 1.05 }}
-            transition={{ duration: 0.3 }}
+            whileTap={{ scale: 0.7 }}
+            // whileHover={{ scale: 1.05 }}
+            transition={{ duration: 0.1 }}
             variant={"outline"}
-            className="p-4 md:p-6 font-bold text-sm sm:text-base"
+            className="p-4 md:p-6 font-bold text-sm sm:text-base "
           >
             <motion.span>View Docs</motion.span>
           </MotionButton>
-        </div>
+        </motion.div>
 
-        <motion.div className="flex flex-col mt-12 absolute bottom-6 lg:absolute lg:bottom-12 justify-center items-center w-full gap-1">
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1, delay: 0 }}
+          className="flex flex-col mt-12 absolute bottom-6 lg:absolute lg:bottom-12 justify-center items-center w-full gap-1"
+        >
           <div className="flex flex-wrap justify-center items-center w-full gap-4 md:gap-6 px-4">
             <div className="flex gap-2 sm:gap-4 items-center justify-center">
               <Nextjs />
@@ -112,6 +124,7 @@ function Hero() {
               initial={{ pathLength: 0 }}
               animate={{ pathLength: 1 }}
               transition={{
+                delay:0.4,
                 duration: 3,
                 ease: "easeInOut",
               }}

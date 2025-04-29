@@ -24,26 +24,26 @@ export default function Navbar() {
         </Link>
         <nav className="hidden md:flex gap-6">
           <Link
-            href="/components"
-            className="text-sm font-medium hover:text-rose-600 transition-colors"
+            href="/component"
+            className="text-sm font-medium hover:text-blue-500 hover:font-bold transition-colors"
           >
             Components
           </Link>
           <Link
             href="/docs"
-            className="text-sm font-medium hover:text-rose-600 transition-colors"
+            className="text-sm font-medium hover:text-blue-500 hover:font-bold transition-colors"
           >
             Documentation
           </Link>
           <Link
             href="/pricing"
-            className="text-sm font-medium hover:text-rose-600 transition-colors"
+            className="text-sm font-medium hover:text-blue-500 hover:font-bold transition-colors"
           >
             Pricing
           </Link>
           <Link
             href="/about"
-            className="text-sm font-medium hover:text-rose-600 transition-colors"
+            className="text-sm font-medium hover:text-blue-500 hover:font-bold transition-colors"
           >
             About
           </Link>
@@ -65,7 +65,7 @@ export default function Navbar() {
             }}
               size="sm"
               variant={"outline"}
-              className="bg-blue-600 hover:bg-rose-700"
+              className="bg-blue-600 hover:bg-blue-700"
             >
               <Github />
               Github
@@ -91,29 +91,29 @@ export default function Navbar() {
         <div className="container md:hidden">
           <nav className="flex flex-col gap-4 p-4">
             <Link
-              href="/components"
-              className="text-sm font-medium hover:text-rose-600 transition-colors"
+              href="/component"
+              className="text-sm font-medium hover:text-blue-500 transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
               Components
             </Link>
             <Link
               href="/docs"
-              className="text-sm font-medium hover:text-rose-600 transition-colors"
+              className="text-sm font-medium hover:text-blue-500 transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
               Documentation
             </Link>
             <Link
               href="/pricing"
-              className="text-sm font-medium hover:text-rose-600 transition-colors"
+              className="text-sm font-medium hover:text-blue-500 transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
               Pricing
             </Link>
             <Link
               href="/about"
-              className="text-sm font-medium hover:text-rose-600 transition-colors"
+              className="text-sm font-medium hover:text-blue-500 transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
               About

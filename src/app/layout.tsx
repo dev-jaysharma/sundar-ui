@@ -50,11 +50,9 @@ export default function RootLayout({
           property="og:description"
           content="Build modern, beautiful applications with Sundar UI's customizable React components."
         />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://yourdomain.com" />
         <meta
-          property="og:image"
-          content="https://yourdomain.com/og-image.png"
+          name="google-site-verification"
+          content="7nE2xtBKvdrx-A2mwXzI4A0SvFuE9CMXU0pkRn_zkCE"
         />
         <meta property="og:locale" content="en_US" />
         <meta property="og:site_name" content="Sundar UI" />
