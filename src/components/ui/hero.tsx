@@ -29,7 +29,7 @@ function Hero() {
               <span> Mordern</span> <br />
             </div>
             <div className="relative w-full flex justify-center">
-              
+
             </div>
             Beautiful Interfaces <br />
             Effortlessly
